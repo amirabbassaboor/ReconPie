@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Information</title>
+    <style>
+        body,html {
+            padding: 0;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            background-color: #f2f2f2;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 10px;
+        }
+        .box {
+            background-color: #fff;
+            box-shadow: 1px 0px 4px -1px rgba(0,0,0, 0.3);
+            border-radius: 6px;
+            min-width: 400px;
+            flex-grow: 1;
+        }
+
+        .box:empty {
+            visibility: hidden;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .box-header {
+            padding: 10px;
+            color: #555;
+            font-weight: bold;
+            font-size: 13px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+            background-color: #f8f8f8;
+            border-radius: 6px 6px 0 0;
+        }
+        
+        .box-body {
+            padding: 12px;
+        }
+
+        .info-title
+        {
+            font-weight: bold;
+            color: #888;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="box-header">SubDomains</div>
+            <div class="box-body">
+                $$SubDomains$$
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-header">Title, Phone, Email</div>
+            <div class="box-body">
+                <div>
+                    <span class="info-title">Status: </span>
+                    <span>$$Status$$</span>
+                </div>
+                <div>
+                    <span class="info-title">IP Address: </span>
+                    <span>$$IP$$</span>
+                </div>
+                <div>
+                    <span class="info-title">Title: </span>
+                    <span>$$Title$$</span>
+                </div>
+
+                <div>
+                    <span class="info-title">Phone: </span>
+                    <span>$$Phone$$</span>
+                </div>
+
+                <div>
+                    <span class="info-title">Email: </span>
+                    <span>$$Email$$</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-header">Ports</div>
+            <div class="box-body">
+                $$Ports$$
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-header">Sitemap</div>
+            <div class="box-body">
+                $$Sitemap$$
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-header">Whois</div>
+            <div class="box-body">
+                $$Whois$$
+            </div>
+        </div>
+        <!--این باکس ها رو حذف نکن-->
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
